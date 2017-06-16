@@ -6,6 +6,16 @@ General snippets and tips for development
 - PHP
 
 ## PHP
+### Using try/catch
+```php
+<?php
+try{
+    // Do something
+}catch(Exception $e) {
+    // Error message
+    $e->getMessage(); 
+}
+```
 ### Force charset
 ```php
 <?php header ('Content-type: text/html; charset=UTF-8'); ?>
