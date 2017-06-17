@@ -6,8 +6,8 @@ General snippets and tips for quick development
 - CSS
     - SASS
 - [Javascript](#javascript)
-    - General
-        - Functions to manage cookies easily
+    - [General](#javascriptgeneral)
+        - [Functions to manage cookies easily](#javascriptmanagecookie)
         - Parsing and using JSON
     - jQuery
     - jQuery Validate
@@ -22,8 +22,8 @@ General snippets and tips for quick development
         -- Configuring PHPMailer
 
 # Javascript<a name="javascript"></a>
-## General
-### Functions to manage cookies easily
+## General<a name="javascriptgeneral"></a>
+### Functions to manage cookies easily<a name="javascriptmanagecookie"></a>
 ```javascript
 function setCookie(name, value, days) {
     var expires;
