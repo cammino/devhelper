@@ -5,7 +5,7 @@ General snippets and tips for quick development
 - HTML
 - CSS
     - SASS
-- Javascript
+- [Javascript](#javascript)
     - General
         - Functions to manage cookies easily
         - Parsing and using JSON
@@ -21,7 +21,7 @@ General snippets and tips for quick development
     - Hostgator
         -- Configuring PHPMailer
 
-# Javascript
+# Javascript<a name="javascript"></a>
 ## General
 ### Functions to manage cookies easily
 ```javascript
