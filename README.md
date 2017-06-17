@@ -8,6 +8,7 @@ General snippets and tips for quick development
 - Javascript
     - General
         - Functions to manage cookies easily
+        - Parsing and using JSON
     - jQuery
     - jQuery Validate
         - Translating error messages
@@ -49,6 +50,12 @@ function delCookie(name) {
     setCookie(name, "", -1);
 }
 ```
+### Parsing and using JSON
+```javascript
+var data = '{"message":"something here.."}';
+data = JSON.parse(data);
+console.log(data.message);
+```
 ## jQuery Validate
 ### Translating error messages
 ```javascript
@@ -56,8 +63,7 @@ jQuery.extend(jQuery.validator.messages, {
     required: "Campo Obrigatório.",
     email: "Email inválido.",
 });
-```
-
+```   
 # PHP
 ## General
 ### Using try/catch
