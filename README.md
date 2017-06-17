@@ -2,24 +2,24 @@
 General snippets and tips for quick development
 
 # Sumary
-- HTML
-- CSS
-    - SASS
+- [HTML](#html)
+- [CSS](#css)
+    - [SASS](#sass)
 - [Javascript](#javascript)
     - [General](#javascriptgeneral)
         - [Functions to manage cookies easily](#javascriptmanagecookie)
-        - Parsing and using JSON
-    - jQuery
-    - jQuery Validate
-        - Translating error messages
-- PHP
-    - General
-        - Using Try/Catch
-        - Forcing Charset
-- RUBY
-- HOSTING
-    - Hostgator
-        -- Configuring PHPMailer
+        - [Parsing and using JSON](#javascriptjson)
+    - [jQuery](#jquery)
+    - [jQuery Validate](#jqueryvalidate)
+        - [Translating error messages](#jqueryvalidatetranslate)
+- [PHP](#php)
+    - [General](#phpgeneral)
+        - [Using Try/Catch](#phpgeneraltrycatch)
+        - [Forcing Charset](#phpgeneralforcingcharset)
+- [RUBY](#ruby)
+- [HOSTING](#hosting)
+    - [Hostgator](#hostinghostgator)
+        - [Configuring PHPMailer](#hostingchostgatorconfphpmailer)
 
 # Javascript<a name="javascript"></a>
 ## General<a name="javascriptgeneral"></a>
@@ -53,23 +53,23 @@ function delCookie(name) {
     setCookie(name, "", -1);
 }
 ```
-### Parsing and using JSON
+### Parsing and using JSON<a name="javascriptjson"></a>
 ```javascript
 var data = '{"message":"something here.."}';
 data = JSON.parse(data);
 console.log(data.message);
 ```
-## jQuery Validate
-### Translating error messages
+## jQuery Validate<a name="jqueryvalidate"></a>
+### Translating error messages<a name="jqueryvalidatetranslate"></a>
 ```javascript
 jQuery.extend(jQuery.validator.messages, {
     required: "Campo Obrigatório.",
     email: "Email inválido.",
 });
 ```   
-# PHP
-## General
-### Using try/catch
+# PHP<a name="php"></a>
+## General<a name="phpgeneral"></a>
+### Using try/catch<a name="phpgeneraltrycatch"></a>
 ```php
 <?php
 try{
@@ -79,15 +79,15 @@ try{
     $e->getMessage(); 
 }
 ```
-### Forcing charset
+### Forcing charset<a name="phpgeneralforcingcharset"></a>
 ```php
 <?php header ('Content-type: text/html; charset=UTF-8'); ?>
 <?php header ('Content-type: text/html; charset=ISO-8859-1'); ?>
 ```
 
-# Hosting
-## Hostgator
-### Configuring PHPMailer
+# Hosting<a name="hosting"></a>
+## Hostgator<a name="hostinghostgator"></a>
+### Configuring PHPMailer<a name="hostingchostgatorconfphpmailer"></a>
 ```php
 <?php
 include("PHPMailer/PHPMailerAutoload.php");
